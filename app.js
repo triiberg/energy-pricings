@@ -42,6 +42,13 @@ const requestListener = function (req, res) {
         final.priceData = eleringFormatter(eleringResponse.data.data.ee);
       }
 
+      var len =  (JSON.stringify(final)).length;
+      console.log(final);
+
+
+      res.setHeader('Content-Type', 'application/json; charset=UTF-8');
+      res.setHeader('Content-Length', len);
+
       res.writeHead(200);
       res.end(JSON.stringify(final));
 
