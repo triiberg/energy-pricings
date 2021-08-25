@@ -1,0 +1,13 @@
+{
+  "name": "enegery-pricings",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "http": "0.0.1-security",
+    "moment": "^2.29.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
