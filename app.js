@@ -46,7 +46,7 @@ const requestListener = function (req, res) {
       console.log(final);
 
 
-      res.setHeader('Content-Type', 'application/json; charset=UTF-8');
+      res.setHeader('Content-Type', 'application/json; charset=ASCII');
       res.setHeader('Content-Length', len);
 
       res.writeHead(200);
